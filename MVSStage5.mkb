@@ -1,0 +1,61 @@
+<<<<<<< HEAD
+
+#!/usr/bin/env mkb
+
+
+options
+{
+    module_path="C:/Marmalade/7.4/examples/GameTutorial/CPP/modules"
+}
+ 
+
+subprojects
+
+{
+
+    iw2d
+    SoundEngine
+
+}
+
+ 
+
+files
+
+{
+    [source]
+    (source)
+    audio.cpp
+    input.cpp
+    MVSStage2_main.cpp
+
+    audio.h
+    input.h
+}
+
+
+assets
+
+{
+
+    (data)
+
+    textures
+    audio
+
+=======
+#!/usr/bin/env mkb
+files
+{
+    MVSStage5.cpp
+}
+
+subprojects
+{
+    iwutil
+}
+
+deployment
+{
+>>>>>>> origin/master
+}
