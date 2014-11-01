@@ -1,44 +1,58 @@
 #!/usr/bin/env mkb
 
-
 options
 {
     module_path="C:/Marmalade/7.4/examples/GameTutorial/CPP/modules"
 }
- 
+
+includepaths
+{
+    include
+}
+
 
 subprojects
-
 {
-
     iw2d
+    iw2dscenegraph
+    iw2dscenegraphcore
+    iwtween
     SoundEngine
+    ../../../MarmaladeExampleResources
 
 }
 
- 
-
 files
-
 {
     [source]
     (source)
     audio.cpp
+    game.cpp
     input.cpp
     MVSStage5_main.cpp
+    mainMenu.cpp
+    pauseMenu.cpp
+    resources.cpp
+    scene.cpp
 
+    [include]
+    (include)
     audio.h
+    game.h
     input.h
+    main.h
+    mainMenu.h
+    pauseMenu.h
+    resources.h
+    scene.h
 }
 
-
 assets
-
 {
-
     (data)
-
-    textures
     audio
+    textures
 
+    (data-ram/data-gles1, data)
+    .
 }
